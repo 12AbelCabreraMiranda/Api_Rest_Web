@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Name</th>
+            <th>Month</th>
+            <th>Sales_Figure</th>
+            <th>Perc</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Month</td>
+                <td>@item.Sales_Figure</td>
+                <td>@item.Perc</td>
+            </tr>
+        }
+    </table>
+
